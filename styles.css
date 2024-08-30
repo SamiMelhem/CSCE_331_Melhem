@@ -22,6 +22,21 @@ header {
     padding-top: 100px;
 }
 
+.quote-section {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency for text readability */
+    padding: 20px;
+    border-radius: 10px;
+
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+
+    border-bottom: 2px solid #333; /* Adds a line at the bottom of the quote section */
+}
+
 header h1 {
     font-size: 4rem;
 }
@@ -135,6 +150,7 @@ header h1 {
 .about-me-content h2 {
     margin-top: 0;
     font-size: 2rem;
+    border-bottom: 2px solid #333;
 }
 
 .about-me-content p {
