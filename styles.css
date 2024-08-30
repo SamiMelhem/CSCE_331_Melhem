@@ -2,15 +2,22 @@ body {
     font-family: Arial, Helvetica, sans-serif; /* Arial font family given by typing Arial */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image: url(''); /* Replace with your image URL */
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    color: #333;
 }
 
 header {
-    background-image: url(''); /* A link to the image */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency for text readability */
+    padding: 20px;
+    border-radius: 10px;
+
     background-size: cover;
     background-position: center;
-    height: 300px;
-    color: white;
+    height: 212px;
+    color: black;
     text-align: center;
     padding-top: 100px;
 }
@@ -19,23 +26,54 @@ header h1 {
     font-size: 4rem;
 }
 
-nav {
+.header-content {
     display: flex;
     justify-content: center;
-    background-color: #333;
+    align-items: center;
+    padding: 20px;
+}
+
+.search-bar input {
     padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 20px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
+.icons img {
+    width: 30px;
+    height: 30px;
     margin: 0 10px;
-    font-size: 1.2rem;
 }
 
-nav a:hover {
-    background-color: #555;
+.title-box {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title-box h1 {
+    margin: 0;
+    font-size: 4rem;
+}
+
+.quote-box {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.quote-box h1 {
+    margin: 0;
+    font-size: 2rem;
+    padding: 10px 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
 }
 
 .content {
@@ -59,7 +97,96 @@ nav a:hover {
     height: 50px;
 }
 
-footer{
+/* The About Me Section of the main page of my personal website */
+
+.about-me {
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+}
+
+.about-me-section {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency for text readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-me-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.about-me-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-me-content {
+    flex-grow: 2;
+    margin-right: 20px;
+}
+
+.about-me-content h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.about-me-content p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.about-me-scroll {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-me-scroll button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.about-me-scroll button:hover {
+    background-color: #005bb5;
+}
+
+.personal-links {
+    min-width: 150px;
+}
+
+.personal-links h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.personal-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.personal-links ul li {
+    margin-bottom: 10px;
+}
+
+.personal-links ul li a {
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* footer{
     text-align: center;
     padding: 20px;
     background-color: #333;
@@ -67,9 +194,4 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-
-.about-me {
-    margin-top: 40px;
-    text-align: center;
-}
+} */
