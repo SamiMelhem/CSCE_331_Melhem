@@ -291,6 +291,119 @@ main {
 }
 
 /* Qualifications Unique Stiles */
+/* Clubs Section (Slideshow) */
+/* Clubs Section (Slideshow) */
+.clubs-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.clubs-section h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.slides {
+    display: none;
+}
+
+.slideshow-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Portfolio-style shadow */
+}
+
+.text {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots */
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Events Section */
+.events-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.event {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.event p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
 
 /* Service Unique Stiles */
 
