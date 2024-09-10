@@ -12,10 +12,11 @@ body {
     background-size: auto;
     background-attachment: fixed;
     color: #333;
+    background-color: #333;
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency for text readability */
+    background-color: rgba(255, 255, 255, 0.6); /* White background with some transparency for text readability */
     padding: 20px;
     border-radius: 10px;
 
