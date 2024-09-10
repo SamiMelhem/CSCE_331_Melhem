@@ -1,3 +1,8 @@
+/* For unique stylings search up these terms:
+    Portfolio, Qualifications, Service, Passions
+    Yw ;)
+*/
+
 body {
     font-family: Arial, Helvetica, sans-serif; /* Arial font family given by typing Arial */
     margin: 0;
@@ -292,7 +297,6 @@ main {
 
 /* Qualifications Unique Stiles */
 /* Clubs Section (Slideshow) */
-/* Clubs Section (Slideshow) */
 .clubs-section {
     padding: 40px;
     text-align: center;
@@ -330,31 +334,6 @@ main {
     bottom: 8px;
     left: 16px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-/* Arrows */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Dots */
@@ -406,5 +385,201 @@ main {
 }
 
 /* Service Unique Stiles */
+/* Only apply these styles to the Service page */
+body.service-page {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: black;
+}
+
+body.service-page header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    padding-top: 100px;
+}
+
+body.service-page header h1 {
+    font-size: 4rem;
+}
+
+body.service-page main.service-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for Organization and Events */
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Organization Section */
+body.service-page .organization-section {
+    grid-column: 1 / 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+body.service-page .organization-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+body.service-page .organization-box img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+body.service-page .organization-box p {
+    font-size: 1.2rem;
+}
+
+/* Events Section */
+body.service-page .events-section {
+    grid-column: 2 / 3;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.service-page .events-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+body.service-page .event-box {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+body.service-page .event-box img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+body.service-page .event-content {
+    flex-grow: 1;
+}
+
+body.service-page .event-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+body.service-page .event-content p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Responsive Styling for Service Page */
+@media (max-width: 768px) {
+    body.service-page main.service-content {
+        grid-template-columns: 1fr; /* Switch to one column layout */
+    }
+
+    body.service-page .event-box {
+        flex-direction: column;
+    }
+
+    body.service-page .event-box img {
+        width: 100%;
+        max-width: none;
+    }
+}
 
 /* Passions Unique Stiles */
+body.passions-page {
+    background-color: #333;
+    color: white;
+}
+
+header h1 {
+    color: black; /* Header remains black for contrast */
+    font-size: 4rem;
+    text-align: center;
+}
+
+.portfolio-albums {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.music-box,
+.albums-box {
+    background-color: white;
+    color: black; /* Text in white box should be black */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+
+.album-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.album-images img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sports Section */
+.sports-section {
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.sports-grid {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sport-item {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 23%;
+    text-align: center;
+}
+
+.sport-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
