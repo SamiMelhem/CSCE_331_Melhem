@@ -1,0 +1,360 @@
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #004488;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+header h1 {
+    margin-top: 10px;
+}
+
+/* Search bar styling */
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+.content div {
+    background-color: #eeeeee;
+    padding: 20px;
+    border-radius: 10px;
+    width: 23%;
+    transition: background-color 0.3s;
+}
+
+.content div:hover {
+    background-color: #dcdcdc;
+}
+
+.content img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.content h2 a {
+    color: #004488;
+    text-decoration: none;
+}
+
+.content h2 a:hover {
+    text-decoration: underline;
+}
+
+/* Quote Section */
+.quote-section {
+    background-color: #d1e0f7;
+    padding: 30px;
+    text-align: center;
+    font-style: italic;
+}
+
+.quote-section h1 {
+    font-size: 24px;
+}
+
+/* About Me Section */
+.about-me-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.about-me-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about-me-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.about-me-content {
+    flex-grow: 2;
+}
+
+.about-me-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-me-content p {
+    line-height: 1.6;
+}
+
+.personal-links ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.personal-links li {
+    margin-bottom: 10px;
+}
+
+.personal-links li a {
+    text-decoration: none;
+    color: #004488;
+}
+
+.personal-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Portfolio Page Styles */
+.resume-section,
+.projects-section {
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.resume-section h2, 
+.projects-section h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume img,
+.certificate img,
+.project img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.project {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Qualification Page Styles */
+.clubs-section,
+.events-section {
+    padding: 20px;
+}
+
+.clubs-section h2,
+.events-section h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+}
+
+.slides {
+    display: none;
+    text-align: center;
+}
+
+.slides img {
+    width: 150px;
+    height: auto;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/* Service Page Styles */
+.service-page {
+    padding: 20px;
+}
+
+.service-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.organization-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.event-box {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Passions Page Styles */
+.passions-page {
+    padding: 20px;
+}
+
+.portfolio-albums {
+    display: flex;
+    justify-content: space-between;
+}
+
+.music-box, .albums-box {
+    width: 48%;
+}
+
+.music-box ul {
+    list-style-type: none;
+}
+
+.music-box h4 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.albums-box .album-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album-images img {
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.sports-section {
+    margin-top: 40px;
+}
+
+.sports-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.sports-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sport-item {
+    width: 22%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sport-item img {
+    width: 80px;
+    height: 80px;
+}
+
+.sport-item ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+/* Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}

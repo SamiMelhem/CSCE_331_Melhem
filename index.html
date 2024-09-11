@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Sami Melhem</title>
 
-    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sami Melhem">
     <meta name="description" content="Sami Melhem's Personal Website for internships/jobs from companies, and made from CSCE 331 at Texas A&M University">
@@ -12,6 +11,41 @@
 
     <!--Font Awesome CSS file I found for using social media icons :)-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link id="style-link" rel="stylesheet" href="styles.css">
+
+    <script>
+        // Function to switch styles
+        function switchStyle() {
+            var toggle = document.getElementById("style-toggle");
+
+            if (toggle.checked) {
+                document.getElementById("style-link").setAttribute("href", "styles2.css");
+                localStorage.setItem("preferredStyle", "styles2.css");
+            } else {
+                document.getElementById("style-link").setAttribute("href", "styles.css");
+                localStorage.setItem("preferredStyle", "styles.css");
+            }
+        }
+        
+        // Function to load the saved style on page reload
+        function loadPreferredStyle() {
+            var savedStyle = localStorage.getItem("preferredStyle");
+            
+            // Default to styles.css if no style is saved
+            if (savedStyle === "styles2.css") {
+                document.getElementById("style-link").setAttribute("href", "styles2.css");
+                document.getElementById("style-toggle").checked = true;
+            } else {
+                document.getElementById("style-link").setAttribute("href", "styles.css");
+                document.getElementById("style-toggle").checked = false;
+            }
+        }
+        
+        // Call the function when the page loads to ensure the preferred style is loaded
+        window.onload = function() {
+            loadPreferredStyle();
+        };
+    </script>
 </head>
 <body>
     <header> 
@@ -21,6 +55,10 @@
                 <input type="text" placeholder="Search...">
             </div>
             <img src="Sami-Icon.png" alt="Same Icon 2"> <!--The same icon on both sides-->
+            <label class="switch">
+                <input type="checkbox" id="style-toggle" onclick="switchStyle()">
+                <span class="slider"></span>
+            </label>
         </div>
         <div class="title-box">
             <h1> Sami Melhem </h1>
@@ -85,6 +123,5 @@
             </div>
         </div>
     </section>
-
 </body>
 </html>

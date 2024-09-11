@@ -52,5 +52,33 @@
     </main>
 
     <script src="scripts.js"></script>
+
+    <script>
+        function switchStyle() {
+            var toggle = document.getElementById("style-toggle");
+            if (toggle.checked) {
+                document.getElementById("style-link").setAttribute("href", "styles2.css");
+                localStorage.setItem("preferredStyle", "styles2.css");
+            } else {
+                document.getElementById("style-link").setAttribute("href", "styles.css");
+                localStorage.setItem("preferredStyle", "styles.css");
+            }
+        }
+
+        function loadPreferredStyle() {
+            var savedStyle = localStorage.getItem("preferredStyle");
+            if (savedStyle === "styles2.css") {
+                document.getElementById("style-link").setAttribute("href", "styles2.css");
+                document.getElementById("style-toggle").checked = true;
+            } else {
+                document.getElementById("style-link").setAttribute("href", "styles.css");
+                document.getElementById("style-toggle").checked = false;
+            }
+        }
+
+        window.onload = function() {
+            loadPreferredStyle();
+        };
+    </script>
 </body>
 </html>
